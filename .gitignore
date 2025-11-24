@@ -1,0 +1,18 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+venv/
+.conda/
+
+# --- PyCharm ---
+.idea/
+
+# --- Data & Artifacts (DO NOT UPLOAD THESE) ---
+data/
+stl10_binary/
+*.npy
+*.pkl
+*.pth
