@@ -25,13 +25,13 @@ We use the **STL-10** dataset (Coates et al., 2011), specifically the unlabeled 
 
 ```mermaid
 graph LR
-    A[Input Image] --> B[ResNet18 (No FC)]
-    B --> C[512D Vector]
-    C --> D{K-Means}
-    D --> E[Cluster ID]
-    C --> F{Cosine Search}
-    F --> G[Nearest Neighbors]
-````
+    A["Input Image"] --> B["ResNet18 (No FC)"]
+    B --> C["512D Vector"]
+    C --> D{"K-Means"}
+    D --> E["Cluster ID"]
+    C --> F{"Cosine Search"}
+    F --> G["Nearest Neighbors"]
+```
 
 ## ⚙️ Installation & Usage
 
