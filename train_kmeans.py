@@ -15,7 +15,7 @@ def main():
     # 1. Load Features
     print("Loading features...")
     if not os.path.exists(FEATURES_PATH):
-        print(f"❌ Error: {FEATURES_PATH} not found. Run extract_features.py first.")
+        print(f"Error: {FEATURES_PATH} not found. Run extract_features.py first.")
         return
 
     features = np.load(FEATURES_PATH)
@@ -51,7 +51,7 @@ def main():
     # 4. Analyze Distribution
     # We want to check if the clusters are balanced.
     unique, counts = np.unique(labels, return_counts=True)
-    print("\n📊 Cluster Distribution:")
+    print("\nCluster Distribution:")
     print("-" * 30)
     for k, count in zip(unique, counts):
         print(f"   Cluster {k}: {count} images")
