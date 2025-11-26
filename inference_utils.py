@@ -8,13 +8,10 @@ from sklearn.metrics.pairwise import cosine_similarity
 from PIL import Image
 
 # --- CONFIGURATION ---
-# Detect hardware (MPS for Mac, CUDA for NVIDIA/AMD, CPU otherwise)
-if torch.cuda.is_available():
-    DEVICE = torch.device("cuda")
-elif torch.backends.mps.is_available():
-    DEVICE = torch.device("mps")
-else:
-    DEVICE = torch.device("cpu")
+# FORCE CPU for stability.
+# The GPU driver causes SegFaults when interacting with the Gradio web server.
+DEVICE = torch.device("cpu")
+print(f"🚀 Initializing Search Engine on {DEVICE} (Stability Mode)...")
 
 
 class SearchEngine:
