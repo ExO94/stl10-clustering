@@ -3,7 +3,7 @@
 A machine learning pipeline that organizes unlabeled images into semantic clusters using Deep Transfer Learning.
 
 ## 🚀 Live Demo
-**[Click here to view the Live App on Hugging Face Spaces](3x094/stl10-clustering)**
+**[Click here to view the Live App on Hugging Face Spaces](https://huggingface.co/spaces/3x094/stl10-clustering)**
 
 ![Project Banner](https://img.shields.io/badge/PyTorch-ResNet18-red) ![Status](https://img.shields.io/badge/Status-Deployed-success)
 
