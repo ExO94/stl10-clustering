@@ -55,7 +55,7 @@ def analyze_image(query_image):
 # --- 2. BUILD INTERFACE ---
 # We use Gradio Blocks for a professional layout
 with gr.Blocks(title="STL-10 Visual Search") as demo:
-    gr.Markdown("#Semantic Image Clustering & Search")
+    gr.Markdown("Semantic Image Clustering & Search")
     gr.Markdown("""
     **Architecture:** ResNet18 (Feature Extractor) + K-Means (Clustering)
     **Dataset:** STL-10 (Unsupervised)
