@@ -8,14 +8,14 @@ import os
 DATA_ROOT = '/home/ex0/Downloads/stl10'
 
 # --- 1. INITIALIZE SYSTEM ---
-print("🚀 Starting Server...")
+print("Starting Server...")
 
 # Initialize the logic engine (Loads ResNet + K-Means + Features)
 engine = SearchEngine()
 
 # Load the raw dataset so we can display the actual images in the gallery
 # We use 'unlabeled' split to match the indices in features.npy
-print(f"📂 Linking to dataset at {DATA_ROOT}...")
+print(f"Linking to dataset at {DATA_ROOT}...")
 dataset = datasets.STL10(root=DATA_ROOT, split='unlabeled', download=True)
 
 
@@ -55,7 +55,7 @@ def analyze_image(query_image):
 # --- 2. BUILD INTERFACE ---
 # We use Gradio Blocks for a professional layout
 with gr.Blocks(title="STL-10 Visual Search") as demo:
-    gr.Markdown("# 🛳️ Semantic Image Clustering & Search")
+    gr.Markdown("#Semantic Image Clustering & Search")
     gr.Markdown("""
     **Architecture:** ResNet18 (Feature Extractor) + K-Means (Clustering)
     **Dataset:** STL-10 (Unsupervised)
